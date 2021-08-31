@@ -1,0 +1,21 @@
+caso de uso:https://lucid.app/lucidchart/invitations/accept/inv_aa33d6ef-f563-49dc-98d4-61c8d0845d66?viewport_loc=-11%2C-11%2C2219%2C1055%2C0_0
+
+caso de uso 2:https://lucid.app/lucidchart/invitations/accept/inv_acf6f5b0-dfb2-4559-8880-68b0b3968984?viewport_loc=-183%2C-11%2C2219%2C1055%2C0_0
+
+classes : https://lucid.app/lucidchart/invitations/accept/inv_d6129cd1-84b4-4442-9cae-de7cd08fb708?viewport_loc=-11%2C-11%2C2219%2C1055%2C0_0
+
+Requisitos Funcionais:
+	Gerencia de conta:
+		Excluir conta, alterar dados(nome, login, senha, imagem)
+	Gerenciar Músicas:
+		Adcionar, excluir, alterar dados(nome visível)
+	Ouvir Músicas
+		Manter música ao alterar página, permitir adição de itens em fila
+	Pesquisar usuários
+		permitir busca por nome do usuário
+	
+Requisitos Não Funcionais:
+	Responsividade
+		Sistema com design responsivo, adequando-se ao tamanho da tela
+	Esquema de cores variavel
+		Com intuito de adequar-se a preferência do usuário
