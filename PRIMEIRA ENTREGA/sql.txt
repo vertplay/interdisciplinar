@@ -7,20 +7,22 @@ create table usuarios(
     login varchar(80) not null,
     senha varchar(255) not null,
     nome varchar(255) not null,
-    img varchar(255));
+    img MEDIUMBLOB);
+
 CREATE table musicas(
     id int primary key AUTO_INCREMENT,
     iduser int not null,
     nome varchar(255) not null,
     arquivo varchar(255) not null,
-    FOREIGN key (iduser) REFERENCES usuarios(id));
+    FOREIGN key (iduser) REFERENCES usuarios(id)on delete cascade) ;
 
 CREATE VIEW vw_arquivomusica AS
-SELECT musicas.nome, musicas.arquivo FROM musicas
+SELECT  musicas.nome, musicas.arquivo FROM musicas
 INNER JOIN usuarios
 ON musicas.iduser = usuarios.id;
 
 CREATE VIEW vw_usuariosmusicas AS
 SELECT usuarios.id, usuarios.nome, usuarios.img FROM usuarios
 INNER JOIN musicas
-ON usuarios.id = musicas.iduser; 
+ON usuarios.id = musicas.iduser
+GROUP BY usuarios.id; 

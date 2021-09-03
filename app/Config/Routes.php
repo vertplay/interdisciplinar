@@ -34,9 +34,14 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+//pagina do usuário
+$routes->get('/user/(:num)','Home::user/$1');
+//login
+$routes->get('/login','User::index');
+$routes->post('/login','User::index');
 
-$routes->get('/reol','Music_page::index');
-
+//gera imagem
+$routes->get('/img/(:num)','Home::img/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
